@@ -1,0 +1,23 @@
+
+
+.btn-purple {
+  background-color: #8e00a7;   /* color base */
+  color: white;                /* texto blanco */
+  padding: 10px 20px;          /* espacio interno */
+  border: none;                /* sin borde */
+  border-radius: 6px;          /* esquinas redondeadas */
+  font-size: 16px;             /* tamaño de texto */
+  font-weight: bold;           /* texto en negrita */
+  cursor: pointer;             /* cursor tipo mano */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-purple:hover {
+  background-color: #8e00a7;   /* color al pasar el mouse */
+  transform: scale(1.05);      /* efecto de agrandar */
+}
+
+.btn-purple:active {
+  background-color: #8e00a7;   /* color al hacer clic */
+  transform: scale(0.98);      /* efecto de presionar */
+}
