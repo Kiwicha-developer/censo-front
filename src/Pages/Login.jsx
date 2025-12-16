@@ -1,10 +1,12 @@
 import { useState } from "react";
 import logo from "../assets/logo-censo.jpg"
 import { loginRequest } from "../Services/LoginService";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [doc, setDoc] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +18,9 @@ function Login() {
       localStorage.setItem("token", data.token);
       localStorage.setItem("user", data);
       
-      alert("Login exitoso");
+
+      console.log(data)
+      navigate("/usuarios");
     } catch (error) {
       console.log('error : ' + error);
       alert("Credenciales inválidas");

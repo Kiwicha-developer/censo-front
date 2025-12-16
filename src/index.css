@@ -1,23 +1,37 @@
 
 
 .btn-purple {
-  background-color: #8e00a7;   /* color base */
-  color: white;                /* texto blanco */
-  padding: 10px 20px;          /* espacio interno */
-  border: none;                /* sin borde */
-  border-radius: 6px;          /* esquinas redondeadas */
-  font-size: 16px;             /* tamaño de texto */
-  font-weight: bold;           /* texto en negrita */
-  cursor: pointer;             /* cursor tipo mano */
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  @extend .btn;                /* hereda estilos base de Bootstrap */
+  background-color: #8e00a7;   /* color personalizado */
+  color: #fff;                 /* texto blanco */
 }
 
 .btn-purple:hover {
-  background-color: #8e00a7;   /* color al pasar el mouse */
-  transform: scale(1.05);      /* efecto de agrandar */
+  background-color: #570f64; 
+  color: #fff;  /* color al pasar el mouse */
 }
 
 .btn-purple:active {
   background-color: #8e00a7;   /* color al hacer clic */
   transform: scale(0.98);      /* efecto de presionar */
+}
+
+.purple-hover:hover{
+  background-color: #8e00a7;
+  cursor: pointer;
+  color: white !important;
+  border-radius: 10px;
+}
+
+.text-hover:hover{
+  cursor: pointer;
+  color: #8e00a7 !important;
+}
+
+.primary-text{
+  color: rgb(201, 0, 167) !important;
+}
+
+.secondary-text{
+  color: rgb(132, 21, 155) !important;
 }
