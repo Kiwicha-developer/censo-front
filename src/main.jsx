@@ -27,7 +27,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route element={<HeaderLayout />}>
             <Route path="/usuarios" element={<Usuarios />} />
             <Route path="/censos" element={<Censos />} />
-            <Route path="/datos" element={<Datos />} />
           </Route>
 
         </Route>

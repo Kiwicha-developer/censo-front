@@ -40,13 +40,6 @@ export default function HeaderLayout() {
                                 >
                                 <i className="bi bi-clipboard-data-fill me-2"></i> Censos
                                 </li>
-
-                                <li
-                                className="list-group-item purple-hover primary-text"
-                                onClick={() => navigateTo('/datos')}
-                                >
-                                <i className="bi bi-graph-up-arrow me-2"></i> Datos
-                                </li>
                             </ul>
                             </div>
 
