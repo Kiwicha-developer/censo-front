@@ -14,7 +14,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './index.css'
 import HeaderLayout from './Components/Static/HeaderLayout.jsx'
 import Censos from './Pages/Censos.jsx'
-import Datos from './Pages/Datos.jsx'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
